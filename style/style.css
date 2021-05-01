@@ -3,4 +3,9 @@
   margin-bottom: 10px;
 }
 
+.card-body {
+  height: 450px;
+  padding: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */
