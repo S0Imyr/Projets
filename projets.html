@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css"/>
-    <title>Document</title>
+    <title>Projets</title>
 </head>
 <body>
     <div class="container">
@@ -19,14 +19,14 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
-                            <li class="nav-item px-5">
-                            <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                            <li class="nav-item">
+                            <a class="nav-link px-5" href="index.html">Accueil<span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item px-5">
-                            <a class="nav-link active" href="#">Projets</a>
+                            <li class="nav-item">
+                            <a class="nav-link  px-5 active" href="#">Projets</a>
                             </li>
-                            <li class="nav-item px-5">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link px-5" href="contact.html">Contact</a>
                             </li>
                         </ul>
                         <a class="btn btn-dark px-3" href="https://s0imyr.github.io/Projets/CV2021.pdf">CV</a>
@@ -41,16 +41,279 @@
                 <p class="lead">Mon CV est aussi disponible en haut à droite.</p>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col">
-                Présentation
-            </div>
+        <div id="menu-projects" class="list-projects">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarProjects" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarProjects">
+                    <div class="navbar-nav">
+                        <a href="#list-project-10" class="nav-link px-4">Projet 10</a>
+                        <a href="#list-project-9" class="nav-link px-4">Projet 9</a>
+                        <a href="#list-project-7" class="nav-link px-4">Projet 7</a>
+                        <a href="#list-project-6" class="nav-link px-4">Projet 6</a>
+                        <a href="#list-project-4" class="nav-link px-4">Projet 4</a>
+                        <a href="#list-project-3" class="nav-link px-4">Projet 3</a>
+                        <a href="#list-project-2" class="nav-link px-4">Projet 2</a>
+                    </div>
+                </div>
+            </nav>
         </div>
 
-        <div class="row">
-            <div class="col">
-                Projets
+        <div data-spy="scroll" data-target="#menu-projects" data-offset="0" class="scrollspy-example">
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-10">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet API RESTful avec DRF</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/DRF-logo.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P10-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-10" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P10-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">G</li>
+                            <li class="p-2">P</li>
+                            <li class="p-2">E</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-9">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Django</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/Fusee.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P9-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet9" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P9-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">G</li>
+                            <li class="p-2">P</li>
+                            <li class="p-2">E</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-7">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Algorithmique Python</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/Python.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P7-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/P7-AlgoInvestTrade" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P7-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">G</li>
+                            <li class="p-2">P</li>
+                            <li class="p-2">E</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-6">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Front-end et requête AJAX</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/JustStreamIt.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P6-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-6" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P6-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">G</li>
+                            <li class="p-2">P</li>
+                            <li class="p-2">E</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-4">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet POO Python</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/echecs.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P4-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-4" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P4-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">G</li>
+                            <li class="p-2">P</li>
+                            <li class="p-2">E</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-3">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet de design d'application</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/design-mobil.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>Dans ce cadre il souhaite extraire une grande quantité d'informations du site <a href="https://books.toscrape.com/">BookToScrap</a>.</p>
+                        <p>Les données extraites des livres devront être regroupées dans des fichiers csv.</p>
+                        <p>Les images de couverture des livres doivent être également "scrappées" et retrouvables facilement.</p>
+                        <p>Le projet doit être réalisé sur Python et l'utilisation de Scrapy est proscrite.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P3-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-3" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P3-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">Git et Github</li>
+                            <li class="p-2">Python</li>
+                            <li class="p-2">Environnement virtuel</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-2">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet de Scrapping</h2>
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <img class= "rounded" src="style/images/scrap.PNG" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>Dans ce cadre il souhaite extraire une grande quantité d'informations du site <a href="https://books.toscrape.com/">BookToScrap</a>.</p>
+                        <p>Les données extraites des livres devront être regroupées dans des fichiers csv.</p>
+                        <p>Les images de couverture des livres doivent être également "scrappées" et retrouvables facilement.</p>
+                        <p>Le projet doit être réalisé sur Python et l'utilisation de Scrapy est proscrite.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P2-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-2" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P2-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">Git et Github</li>
+                            <li class="p-2">Python</li>
+                            <li class="p-2">Environnement virtuel</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
+                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <h4>Divers</h4>
+                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
