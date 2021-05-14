@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="row navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+                    <p class="navbar-brand my-0">Bienvenue</p>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item px-5">
+                            <a class="nav-link" href="index.html">Accueil<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item px-5">
+                            <a class="nav-link" href="projets.html">Projets</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link active" href="#">Projets à venir</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-dark px-3" href="https://s0imyr.github.io/Projets/CV2021.pdf">CV</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div id="menu-projects" class="list-projects">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarProjects" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarProjects">
+                    <div class="navbar-nav">
+                        <a href="#list-project-13" class="nav-link px-4">DevOps</a>
+                        <a href="#list-project-12" class="nav-link px-4">Django ORM</a>
+                        <a href="#list-project-11" class="nav-link px-4">Test</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div data-spy="scroll" data-target="#menu-projects" data-offset="0" class="scrollspy-example">
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-13">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">DevOps</h2>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img class= "rounded-left w-100" src="style/images/devops.png" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded-right bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Nous travaillons au sein d'une start-up dans la location de biens immobiliers. En tant que développeur junior, on vous demande d'améliorer un site existant.</p>
+                        <p>Un repository Github avec les instructions pour l'exécuter en local vous est fourni.</p>
+                        <p>Les points à améliorer/ajouter sont :</p>
+                        <ul>
+                            <li>la réduction de diverses dettes techniques sur le projet</li>
+                            <li>la refonte de l'érchitecture modulaire</li>
+                            <li>l'ajout d'un pipeline CI/CD utilisant CircleCI et Heroku</li>
+                            <li>la surveillance de l'application de le suivi des erreurs via Sentry</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-12">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Django ORM</h2>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img class= "rounded-left w-75" src="style/images/django.png" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded-right bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Nous travaillons au sein d'une entreprise dans l'événementiel.</p>
+                        <p>Pour effectuer le suivi de tous les clients et événements, un CRM (Customer Relationship Management) est géré par un fournisseur.</p>
+                        <p>Ce fournisseur a malheureusement été piraté et il vous ai demandé de créer un logiciel CRM interne.</p>
+                        <p>Il s'agit dans un premier temps de réaliser un diagramme entité-relation (ERD) puis de développer l'application sous django avec une base de donnée PostgreSQL.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-11">
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Test</h2>
+                <div class="row">
+                    <div class="col-md-3 text-center">
+                        <img class= "rounded-left" src="style/images/pytest.png" alt="scrap image">
+                    </div>
+                    <div class="col-md-9 rounded-right bg-light p-4">
+                        <h4 class="pb-1">Mission :</h4>
+                        <p>Un projet a été débuté par un collègue absent. Il s'agit de réaliser une application pour coordonner l'organisation de compétitions entre plusieurs clubs.</p>
+                        <p>Une précédente version s'est avérée trop lourde pour les organisateurs régionaux. Le collègue a opté pour réalisé le projet avec Flask.</p>
+                        <p>Il nous est demandé de reprendre le projet et de corriger les bug déjà recensé par le collègue. Il s'agit aussi de réaliser des tests pour couvrir ses bugs.</p>
+                        <p>Enfin il faudra terminer le projet en suivant une approche de Test Driven Developpement.</p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-around">
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P11-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3"" href="https://github.com/S0Imyr/Projet-11" target="_blank">Repository</a>
+                </div>
+
+                <div class="details collapse row bg-light" id="P11-details">
+                    <div class="col-md-4 p-3 border-right border-primary">
+                        <h4 class="p-2">Compétences</h4>
+                        <ul>
+                            <li class="p-2">Flask</li>
+                            <li class="p-2">Tests avec pytest</li>
+                            <li class="p-2">Organisation du travail en équipe sous Git/Github</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h4>Apports</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

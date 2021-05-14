@@ -26,7 +26,7 @@
                             <a class="nav-link  px-5 active" href="#">Projets</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-5" href="contact.html">Contact</a>
+                                <a class="nav-link px-5" href="avenir.html">Projets à venir</a>
                             </li>
                         </ul>
                         <a class="btn btn-dark px-3" href="https://s0imyr.github.io/Projets/CV2021.pdf">CV</a>
@@ -48,13 +48,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarProjects">
                     <div class="navbar-nav">
-                        <a href="#list-project-10" class="nav-link px-4">Projet 10</a>
-                        <a href="#list-project-9" class="nav-link px-4">Projet 9</a>
-                        <a href="#list-project-7" class="nav-link px-4">Projet 7</a>
-                        <a href="#list-project-6" class="nav-link px-4">Projet 6</a>
-                        <a href="#list-project-4" class="nav-link px-4">Projet 4</a>
-                        <a href="#list-project-3" class="nav-link px-4">Projet 3</a>
-                        <a href="#list-project-2" class="nav-link px-4">Projet 2</a>
+                        <a href="#list-project-10" class="nav-link px-4">API avec DRF</a>
+                        <a href="#list-project-9" class="nav-link px-4">Django</a>
+                        <a href="#list-project-7" class="nav-link px-4">Optimisation</a>
+                        <a href="#list-project-6" class="nav-link px-4">Front-end</a>
+                        <a href="#list-project-4" class="nav-link px-4">Python POO</a>
+                        <a href="#list-project-3" class="nav-link px-4">Design</a>
+                        <a href="#list-project-2" class="nav-link px-4">Scrapping</a>
                     </div>
                 </div>
             </nav>
@@ -62,36 +62,63 @@
 
         <div data-spy="scroll" data-target="#menu-projects" data-offset="0" class="scrollspy-example">
             <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-10">
-                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet API RESTful avec DRF</h2>
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet API RESTful avec DRF (en cours)</h2>
                 <div class="row">
                     <div class="col-md-3 text-center">
-                        <img class= "rounded" src="style/images/API.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/API.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>
+                            Une entreprise de développement souhaite avoir une application de suivi des bugs et problèmes de leurs projets en développement.
+                            L'application doit être disponible pour les trois plateforme site web, Android et iOS. Les trois exploiteront les endpoints d'une API.
+                        </p>
+                        <p>
+                            La mission est donc de réaliser cette API en utilisant Django REST Framework.
+                        </p>
+                        <p>
+                            Elle doit tout d'abord permettre l'authentification des utilisateurs avec JWT.
+                            En l'absence d'authentification, aucun endpoint n'est accessible.
+                        </p>
+                        <p>
+                            Les utilisateurs doivent pouvoir créer et avoir la liste des projets. Il faut ensuite être un contributeur du projet pour le lire.
+                            Pour le mettre à jour ou le supprimer, il faut en être l'auteur.
+                        </p>
+                        <p>
+                            Les contributeurs d'un projet peuvent attribuer des problèmes à ce projet ou lire la liste des problèmes d'un projet.
+                            Pour mettre à jour ou supprimer un problème, il faut en être l'auteur.
+                        </p>
+                        <p>
+                            Enfin les contributeurs d'un projet peuvent créer et lire des commentaires relatifs à un problème.
+                            La mise à jour ou la suppression d'un commentaire demande que l'utilisateur soit l'auteur.
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P10-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-10" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P10-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3"" href="https://github.com/S0Imyr/Projet-10" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P10-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">G</li>
-                            <li class="p-2">P</li>
-                            <li class="p-2">E</li>
+                            <li class="p-2">Django Rest Framework</li>
+                            <li class="p-2">Documentation d'une API avec Postman</li>
+                            <li class="p-2">Introduction à l'OWASP</li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
-                        <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p>
+                            Le projet permet de parcourir les différentes possibilités pour créer des endpoints : ViewSet, APIView ou les GenericViewSet.
+                        </p>
+                        <p>
+                            Il permet une mise en pratique des serialiseurs et de l'authentification.
+                        </p>
+                        <p>
+                            Un autre point important est la gestion des permissions à différents niveaux.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -100,69 +127,98 @@
                 <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Django</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/LITReview.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/LITReview.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>
+                            Une start-up souhaite créer un site de critiques littéraires avec un système de followers.
+                            L'utilisateur doit donc pouvoir demander une critique sur un livre, ou à l'inverse répondre à une demande par une critique.
+                            Le système de followers détermine donc les posts que l'utilsateur peut voir, grossièrement les siens et ceux des personnes qu'il suit.
+                        </p>
+                        <p>
+                            Un première étape est donc de créer deux pages de connexion et de création de compte permettant l'authentification des membres.
+                        </p>
+                        <p>
+                            Il s'agit ensuite de créer une page centrale qui contiendra les posts visibles pour l'utilisateur.
+                            Il pourra répondre à des demandes par un bouton sur chaque demande.
+                            En début de page, il aura un bouton pour demander une critique et un autre pour créer une critique qui n'a pas fait l'objet de demande.
+                        </p>
+                        <p>
+                            Enfin une page doit permettre de suivre d'autres utilisateurs et connaître les utilisateurs suivis. Elle pourra aussi indiqué les utilisateurs qui le suivent.
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P9-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet9" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P9-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/Projet9" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P9-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">G</li>
-                            <li class="p-2">P</li>
-                            <li class="p-2">E</li>
+                            <li class="p-2">Django</li>
+                            <li class="p-2">PostgreSQL</li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <p>
+                            Les différentes fonctionnalités permettent d'utiliser de nombreuses aspects de Django et de son modèle Modèles Vues Templates.    
+                        </p>
                         <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p>
+                            J'ai choisi d'utiliser une base de donnée PostgreSQL dans la perspective de projets futurs
+                        </p>
                     </div>
                 </div>
             </div>
 
 
             <div class="blog-post my-3 px-3 border border-primary rounded" id="list-project-7">
-                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Algorithmique Python</h2>
+                <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Algorithmique Python (en cours)</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/algorithme.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/algorithme.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>
+                            Une société financière fait appel à nous pour optimiser ses stratégies d'investissement.
+                        </p>
+                        <p>
+                            Dans un premier temps, elle souhaite avoir un programme python qui analyse un portefeuille réduit de 20 actions.
+                            Pour chaque action, soit on l'achète une fois, soit on ne l'achète pas.
+                            Le programme doit parcourir l'ensemble des possibilités d'investissement pour en retenir la meilleure.
+                        </p>
+                        <p>
+                            Dans un second temps, le programme doit pouvoir tourner pour un portefeuille d'actions plus imposant.
+                            Le programme de force brute développé sera donc trop long, il nous ai donc demandé de l'optimisé.
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P7-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/P7-AlgoInvestTrade" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P7-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/P7-AlgoInvestTrade" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P7-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">G</li>
-                            <li class="p-2">P</li>
-                            <li class="p-2">E</li>
+                            <li class="p-2">Optimisation d'algorithme sous Python</li>
+                            <li class="p-2"></li>
+                            <li class="p-2"></li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <p>
+                            
+                        </p>
                         <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
@@ -171,33 +227,48 @@
                 <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet Front-end et requête AJAX</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/JustStreamIt.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/JustStreamIt.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>
+                            Une association de critiques de films souhaite avoir développer une page web qui affiche les films les mieux classés.
+                            Elle nous fournit pour cela d'une API qui nous permettra d'obtenir les informations sur les films.
+                        </p>
+                        <p>
+                            Pour rentrer dans le détail de la page, elle devra afficher tout d'abord le film le mieux classé avec son affiche, son titre et diverses informations.
+                            En dessous elle devra afficher quatre classements de films, les affiches des 7 meilleurs dans l'ordre. Le premier sera toute catégories confondus puis 3 autres classements de 3 catégories choisies.
+                            Enfin des fenêtres modales devront s'ouvrir lorsqu'on clique sur les affiches des 4 classement. Ces fenêtres modales donnant les principales informations des films. 
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P6-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-6" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P6-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/Projet-6" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P6-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">G</li>
-                            <li class="p-2">P</li>
-                            <li class="p-2">E</li>
+                            <li class="p-2">HTML, CSS et Sass</li>
+                            <li class="p-2">Javascript</li>
+                            <li class="p-2">Programmation asynchrone</li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <p>
+                            Le projet m'a permis de débuter avec Sass et Javascript.
+                        </p>
+                        <p>
+                            On doit également faire appel à une API fournie.
+                        </p>
+                        <p>
+                            Il est aussi l'occasion de découvrir le système de promesse de Javascript en utilisan fetch.
+                        </p>
                         <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p>J'ai par la suite découvert le fonctionnement asynchrone par async/await.</p>
                     </div>
                 </div>
             </div>
@@ -206,33 +277,56 @@
                 <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet POO Python</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/echecs.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/echecs.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
+                        <p>
+                            Il s'agit d'élaborer un programme pour un club d'échecs. Lors de tournoi d'échecs, le programme doit permettre d'établir quels joueurs vont s'affronter.
+                            Le programme doit respecter pour cela, les règles du <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_suisse">tournoi suisse</a>.
+                            Les tournois pouvant être interrompu et repris le lendemain, il doit être possible d'interrompre le tournoi de le reprendre au même stade.
+                            Enfin le programme doit permettre d'écrire un certain nombre de rapports :
+                            <ul>
+                                <li>la liste des joueurs ayant participé aux différents tournois</li>
+                                <li>la liste des tournois</li>
+                                <li>pour un tournoi, la liste des joueurs</li>
+                                <li>pour un tournoi, la liste des matchs</li>
+                                <li>pour un tournoi, la liste des tours</li>
+                            </ul>
+                            Pour les listes de joueurs, elles doivent être disponible par ordre alphabétique ou selon leur classement.
+                        </p>
+                        <p>
+                            En termes de spécifications techniques, il est exigé de suivre un design pattern, il s'agit de se conformer à un modèle de conception MVC (Modèle, Vue, Contrôleur).
+                            Pour la base de donnée, on utilisera le package TinyDB. Enfin le code Python devra respecter la PEP8.
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P4-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-4" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P4-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/Projet-4" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P4-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">G</li>
-                            <li class="p-2">P</li>
-                            <li class="p-2">E</li>
+                            <li class="p-2">POO sous Python</li>
+                            <li class="p-2">Respecter un Design pattern</li>
+                            <li class="p-2">PEP8</li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <p>
+                            Le projet est difficile à débuter puisque l'on part de rien mais est très intéressant dans la conception du modèle.
+                            La gestion des sauvegardes est aussi assez complexe puisqu'il est demandé de pouvoir arrêter et reprendre un tournoi.
+                        </p>
                         <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p>Pour les contrôleurs, j'ai construit un contrôleur principal qui boucle entre les autres contrôleurs. La boucle prenant fin quand on appelle le contrôleur pour quitter.</p>
+                        <p>Les règles du tournoi suisse dans l'élaboration des matchs ne sont pas entièrement respectées. Pour totalement s'y conformer, l'algorithme peut devenir complexe et cela n'était pas l'objectif du projet.
+                            J'y reviendrai certainement pour améliorer cela.
+                        </p>
+                        <p>Actuellement, lorsque les matchs sont déterminés, si tous les joueurs restant se sont déjà rencontrés, les rencontres déjà fixées ne sont pas remises en cause et donc des joueurs peuvent se rencontrer deux fois.</p>
                     </div>
                 </div>
             </div>
@@ -241,37 +335,50 @@
                 <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet de design d'application</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/design-mobil.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/design-mobil.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>Le client souhaite faire une étude de marché sur des livres.</p>
-                        <p>Dans ce cadre il souhaite extraire une grande quantité d'informations du site <a href="https://books.toscrape.com/">BookToScrap</a>.</p>
-                        <p>Les données extraites des livres devront être regroupées dans des fichiers csv.</p>
-                        <p>Les images de couverture des livres doivent être également "scrappées" et retrouvables facilement.</p>
-                        <p>Le projet doit être réalisé sur Python et l'utilisation de Scrapy est proscrite.</p>
+                        <p>L'objectif est de fournir une première ébauche de site à une association. Le site doit mettre en relation des élèves en difficultés et des tuteurs bénévoles.</p>
+                        <p>Les principales fonctionnalités sont
+                            <ul>
+                                <li>un système d'authentification</li>
+                                <li>un tableau de bord faisant office de page d'accueil centralisatrice</li>
+                                <li>un chat</li>
+                                <li>un calendrier pour gérer les rendez vous</li>
+                                <li>un gestionnaire de tâches</li>
+                            </ul>
+                        </p>
+                        <p>Après un premier échange, il est convenu de construire dans un contexte agile :
+                            <ul>
+                                <li>les diagrammes d'usages des principales fonctionnalités</li>
+                                <li>les user stories avec critères d'acceptation</li>
+                                <li>les maquettes fonctionnelles</li>
+                                <li>un kanban</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P3-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-3" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P3-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/Projet-3" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P3-details">
                     <div class="col-md-4 p-3 border-right border-primary">
                         <h4 class="p-2">Compétences</h4>
                         <ul>
-                            <li class="p-2">Git et Github</li>
-                            <li class="p-2">Python</li>
-                            <li class="p-2">Environnement virtuel</li>
+                            <li class="p-2">Prototypage d'une solution technique</li>
+                            <li class="p-2">Définition des exigences fonctionnelles</li>
+                            <li class="p-2">Méthodologies agiles</li>
                         </ul>
                     </div>
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
-                        <p>Le projet est une première expérience avec Python et la configuration d'un environnement virtuel.
-                        Il permet également de découvrir Git et Github. On rencontre des problèmes d'encodage à différent niveaux.</p>
+                        <p>Le projet nous confronte à la relation avec le client et aux difficultés d'établir ses exigences et de s'en rapprocher le plus possible.</p>
+                        <p>Il permet aussi de découvrir l'utilité des méthodes agiles dans ce cadre.</p>
                         <h4>Divers</h4>
-                        <p>J'ai fait le choix de séparer le téléchargement des images et le véritable scrapping même si le programme est plus lent.</p>
+                        <p>Mon expérience d'enseignant m'a servit pour aller un peu plus loin en proposant des apports aux fonctionnalités demandées.</p>
                     </div>
                 </div>
             </div>
@@ -281,9 +388,9 @@
                 <h2 class="blog-post-title display-4 my-4 text-center text-primary">Projet de Scrapping</h2>
                 <div class="row">
                     <div class="col-md-3 text-center ">
-                        <img class= "rounded" src="style/images/scrap.PNG" alt="scrap image">
+                        <img class= "rounded-left" src="style/images/scrap.PNG" alt="scrap image">
                     </div>
-                    <div class="col-md-9 rounded bg-light p-4">
+                    <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
                         <p>Le client souhaite faire une étude de marché sur des livres.</p>
                         <p>Dans ce cadre il souhaite extraire une grande quantité d'informations du site <a href="https://books.toscrape.com/">BookToScrap</a>.</p>
@@ -293,8 +400,8 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
-                    <a class="btn btn-primary px-3 mx-auto" data-toggle="collapse" href="#P2-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
-                    <a class="btn btn-primary px-3 mx-auto" href="https://github.com/S0Imyr/Projet-2" target="_blank">Repository</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" data-toggle="collapse" href="#P2-details" role="button" aria-expanded="false" aria-controls="P2-details">Détails</a>
+                    <a class="btn btn-primary px-3 mx-auto my-3" href="https://github.com/S0Imyr/Projet-2" target="_blank">Repository</a>
                 </div>
 
                 <div class="details collapse row bg-light" id="P2-details">
