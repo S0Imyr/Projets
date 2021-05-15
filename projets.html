@@ -71,7 +71,7 @@
                         <h4 class="pb-1">Mission :</h4>
                         <p>
                             Une entreprise de développement souhaite avoir une application de suivi des bugs et problèmes de leurs projets en développement.
-                            L'application doit être disponible pour les trois plateforme site web, Android et iOS. Les trois exploiteront les endpoints d'une API.
+                            L'application doit être disponible pour les trois plateformes site web, Android et iOS. Les trois exploiteront les endpoints d'une API.
                         </p>
                         <p>
                             La mission est donc de réaliser cette API en utilisant Django REST Framework.
@@ -85,7 +85,7 @@
                             Pour le mettre à jour ou le supprimer, il faut en être l'auteur.
                         </p>
                         <p>
-                            Les contributeurs d'un projet peuvent attribuer des problèmes à ce projet ou lire la liste des problèmes d'un projet.
+                            Les contributeurs d'un projet peuvent lui attribuer des problèmes ou en lire la liste des problèmes.
                             Pour mettre à jour ou supprimer un problème, il faut en être l'auteur.
                         </p>
                         <p>
@@ -114,7 +114,7 @@
                             Le projet permet de parcourir les différentes possibilités pour créer des endpoints : ViewSet, APIView ou les GenericViewSet.
                         </p>
                         <p>
-                            Il permet une mise en pratique des serialiseurs et de l'authentification.
+                            Il permet une mise en pratique des sérialiseurs et de l'authentification.
                         </p>
                         <p>
                             Un autre point important est la gestion des permissions à différents niveaux.
@@ -133,19 +133,21 @@
                         <h4 class="pb-1">Mission :</h4>
                         <p>
                             Une start-up souhaite créer un site de critiques littéraires avec un système de followers.
-                            L'utilisateur doit donc pouvoir demander une critique sur un livre, ou à l'inverse répondre à une demande par une critique.
-                            Le système de followers détermine donc les posts que l'utilsateur peut voir, grossièrement les siens et ceux des personnes qu'il suit.
+                            L'utilisateur doit donc pouvoir demander une critique sur un livre, ou à l'inverse répondre à une demande de critique.
+                            Le système de followers détermine donc les messages que l'utilsateur peut voir, grossièrement les siens et ceux des personnes qu'il suit.
                         </p>
                         <p>
-                            Un première étape est donc de créer deux pages de connexion et de création de compte permettant l'authentification des membres.
+                            Une première étape est donc de créer une page de connexion et une page de création de compte permettant l'authentification des membres.
                         </p>
                         <p>
-                            Il s'agit ensuite de créer une page centrale qui contiendra les posts visibles pour l'utilisateur.
-                            Il pourra répondre à des demandes par un bouton sur chaque demande.
-                            En début de page, il aura un bouton pour demander une critique et un autre pour créer une critique qui n'a pas fait l'objet de demande.
+                            Il s'agit ensuite de créer une page centrale qui contiendra les messages visibles pour l'utilisateur. Ces messages sont soit des demandes de critique soit des critiques.
+                            Une page permet aussi de voir et modifier ses contributions.
                         </p>
                         <p>
-                            Enfin une page doit permettre de suivre d'autres utilisateurs et connaître les utilisateurs suivis. Elle pourra aussi indiqué les utilisateurs qui le suivent.
+                            Trois pages contenant des formulaires permettent à l'utilisateur de participer aux critiques. Une pour y répondre, une pour critiquer et une dernière pour créer une critique pour une oeuvre sans sollicitation.
+                        </p>
+                        <p>
+                            Enfin une page doit permettre de suivre d'autres utilisateurs et de connaître les utilisateurs suivis. Elle pourra aussi indiquer les utilisateurs qui le suivent.
                         </p>
                     </div>
                 </div>
@@ -165,11 +167,11 @@
                     <div class="col-md-8 p-3">
                         <h4>Apports</h4>
                         <p>
-                            Les différentes fonctionnalités permettent d'utiliser de nombreuses aspects de Django et de son modèle Modèles Vues Templates.    
+                            Les différentes fonctionnalités permettent d'utiliser de nombreuses aspects de Django et de son architecture Modèles Vues Templates.    
                         </p>
                         <h4>Divers</h4>
                         <p>
-                            J'ai choisi d'utiliser une base de donnée PostgreSQL dans la perspective de projets futurs
+                            J'ai choisi d'utiliser une base de données PostgreSQL dans la perspective de projets futurs.
                         </p>
                     </div>
                 </div>
@@ -188,13 +190,15 @@
                             Une société financière fait appel à nous pour optimiser ses stratégies d'investissement.
                         </p>
                         <p>
-                            Dans un premier temps, elle souhaite avoir un programme python qui analyse un portefeuille réduit de 20 actions.
-                            Pour chaque action, soit on l'achète une fois, soit on ne l'achète pas.
-                            Le programme doit parcourir l'ensemble des possibilités d'investissement pour en retenir la meilleure.
+                            Dans un premier temps, elle souhaite avoir un programme python qui analyse un portefeuille réduit à 20 actions.
+                            Pour chaque action, nous avons la possibilité de l'achèter une fois ou de ne pas l'achèter.
                         </p>
                         <p>
-                            Dans un second temps, le programme doit pouvoir tourner pour un portefeuille d'actions plus imposant.
-                            Le programme de force brute développé sera donc trop long, il nous ai donc demandé de l'optimisé.
+                            Un premier programme de <strong>force brute</strong> doit parcourir l'ensemble des possibilités d'investissement pour en retenir la meilleure.
+                        </p>
+                        <p>
+                            Dans un second temps, le programme doit pouvoir tourner pour un portefeuille d'actions plus large.
+                            Le programme de force brute développé sera donc trop long, il nous est donc demandé de développer une solution <strong>plus optimisée</strong>.
                         </p>
                     </div>
                 </div>
@@ -232,14 +236,22 @@
                     <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
                         <p>
-                            Une association de critiques de films souhaite avoir développer une page web qui affiche les films les mieux classés.
-                            Elle nous fournit pour cela d'une API qui nous permettra d'obtenir les informations sur les films.
+                            Une association de critiques de films souhaite développer une page web qui affiche les films les mieux notés.
                         </p>
                         <p>
-                            Pour rentrer dans le détail de la page, elle devra afficher tout d'abord le film le mieux classé avec son affiche, son titre et diverses informations.
-                            En dessous elle devra afficher quatre classements de films, les affiches des 7 meilleurs dans l'ordre. Le premier sera toute catégories confondus puis 3 autres classements de 3 catégories choisies.
-                            Enfin des fenêtres modales devront s'ouvrir lorsqu'on clique sur les affiches des 4 classement. Ces fenêtres modales donnant les principales informations des films. 
+                            Elle nous fournit pour cela un repository permettant de créer en local une API (Application Programming Interface).
+                            Nous ferons alors appel à cette API pour que les classements de films s'actualisent.
                         </p>
+                        <p>
+                            La page web devra afficher :
+                            <ul>
+                                <li>le film le mieux classé avec son affiche, son titre et son résumé.</li>
+                                <li>en dessous elle devra donner les affiches des 7 meilleurs films toutes catégories confondues.</li>
+                                <li>puis de nouveau, trois classements des 7 meilleurs films pour trois catégories choisies</li>
+                                <li>enfin des fenêtres modales devront s'ouvrir lorsqu'on clique sur les affiches des films</li>
+                                <li>les fenêtres modales donnent les principales informations des films. </li>
+                            </ul>
+                         </p>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-around">
@@ -262,13 +274,13 @@
                             Le projet m'a permis de débuter avec Sass et Javascript.
                         </p>
                         <p>
-                            On doit également faire appel à une API fournie.
+                            On doit également faire appel à une API ad hoc fournie.
                         </p>
                         <p>
-                            Il est aussi l'occasion de découvrir le système de promesse de Javascript en utilisan fetch.
+                            Ce projet est aussi l'occasion de découvrir le principe de promesse de Javascript en utilisant fetch.
                         </p>
                         <h4>Divers</h4>
-                        <p>J'ai par la suite découvert le fonctionnement asynchrone par async/await.</p>
+                        <p>Par la suite j'ai découvert le fonctionnement asynchrone par async/await.</p>
                     </div>
                 </div>
             </div>
@@ -282,22 +294,35 @@
                     <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
                         <p>
-                            Il s'agit d'élaborer un programme pour un club d'échecs. Lors de tournoi d'échecs, le programme doit permettre d'établir quels joueurs vont s'affronter.
+                            Le client est une association qui organise des tounois d'échecs. Elle souhaite que nous réalisions un programme logiciel aidant à l'organisation des matchs.
+                        </p>
+                        <p>
+                            Lors de tournoi d'échecs, le programme doit permettre d'établir quels joueurs devront s'affronter.
                             Le programme doit respecter pour cela, les règles du <a href="https://fr.wikipedia.org/wiki/Syst%C3%A8me_suisse">tournoi suisse</a>.
-                            Les tournois pouvant être interrompu et repris le lendemain, il doit être possible d'interrompre le tournoi de le reprendre au même stade.
+                        </p>
+                        <p>
+                            Un tournoi pouvant être interrompu et repris le lendemain, il doit être possible d'interrompre le programme et de le relancer au même stade du tournoi.
+                        </p>
+                        <p>    
                             Enfin le programme doit permettre d'écrire un certain nombre de rapports :
                             <ul>
                                 <li>la liste des joueurs ayant participé aux différents tournois</li>
                                 <li>la liste des tournois</li>
-                                <li>pour un tournoi, la liste des joueurs</li>
-                                <li>pour un tournoi, la liste des matchs</li>
-                                <li>pour un tournoi, la liste des tours</li>
+                                <li>pour un tournoi : 
+                                    <ul> 
+                                        <li>la liste des joueurs</li>
+                                        <li>la liste des matchs</li>
+                                        <li>la liste des tours</li>
+                                    </ul>
+                                </li>
                             </ul>
-                            Pour les listes de joueurs, elles doivent être disponible par ordre alphabétique ou selon leur classement.
+                            Pour les listes de joueurs, elles doivent être disponibles par ordre alphabétique ou selon leur classement.
                         </p>
                         <p>
                             En termes de spécifications techniques, il est exigé de suivre un design pattern, il s'agit de se conformer à un modèle de conception MVC (Modèle, Vue, Contrôleur).
-                            Pour la base de donnée, on utilisera le package TinyDB. Enfin le code Python devra respecter la PEP8.
+                        </p>
+                        <p>
+                            Pour la base de données, on utilisera le package TinyDB. Enfin le code Python devra respecter la PEP8.
                         </p>
                     </div>
                 </div>
@@ -323,10 +348,10 @@
                         </p>
                         <h4>Divers</h4>
                         <p>Pour les contrôleurs, j'ai construit un contrôleur principal qui boucle entre les autres contrôleurs. La boucle prenant fin quand on appelle le contrôleur pour quitter.</p>
-                        <p>Les règles du tournoi suisse dans l'élaboration des matchs ne sont pas entièrement respectées. Pour totalement s'y conformer, l'algorithme peut devenir complexe et cela n'était pas l'objectif du projet.
+                        <p>Les règles du tournoi suisse dans l'élaboration des matchs ne sont pas entièrement respectées. Il est notamment nécessaire que les joueurs ne s'affrontent pas plusieurs fois. Pour totalement s'y conformer, l'algorithme peut devenir complexe et cela n'était pas l'objectif du projet.
                             J'y reviendrai certainement pour améliorer cela.
                         </p>
-                        <p>Actuellement, lorsque les matchs sont déterminés, si tous les joueurs restant se sont déjà rencontrés, les rencontres déjà fixées ne sont pas remises en cause et donc des joueurs peuvent se rencontrer deux fois.</p>
+                        <p>En conséquence, actuellement lorsque les premiers matchs sont déterminés, si tous les joueurs restants se sont déjà rencontrés, le programme n'en tient pas compte. Pour des cas particuliers, des joueurs pourraient se rencontrer à nouveau, notamment au dernier match.</p>
                     </div>
                 </div>
             </div>
@@ -339,8 +364,8 @@
                     </div>
                     <div class="col-md-9 rounded-right bg-light p-4">
                         <h4 class="pb-1">Mission :</h4>
-                        <p>L'objectif est de fournir une première ébauche de site à une association. Le site doit mettre en relation des élèves en difficultés et des tuteurs bénévoles.</p>
-                        <p>Les principales fonctionnalités sont
+                        <p>L'objectif est de fournir une première ébauche de site à une association. Le site doit mettre en relation des élèves en difficulté et des tuteurs bénévoles.</p>
+                        <p>Les principales fonctionnalités sont :
                             <ul>
                                 <li>un système d'authentification</li>
                                 <li>un tableau de bord faisant office de page d'accueil centralisatrice</li>
